@@ -148,7 +148,7 @@
 
 // c.greeting = 'hello';
 
-// console.log(d.greeting);
+// console.log(d.greeting); 
 
 let person = {nam:'pc'};
 const members = ['test',person]; // members[0] = person
