@@ -150,9 +150,76 @@
 
 // console.log(d.greeting); 
 
-let person = {nam:'pc'};
-const members = ['test',person]; // members[0] = person
-// members[0].nam=null
-console.log(members);
+// let person = {nam:'pc'};
+// const members = ['test',person]; // members[0] = person
+// // members[0].nam=null
+// console.log(members);
 
-// Deep shallow copy and refrence left
+// Deep shallow copy
+
+// Shallow vs Deep Copy?
+// Shallow
+// when we copy an object to another object
+// but that particular object has still got
+// some reference to atleast some of the properties
+// of original object.
+
+// let a = {
+//     p:100,
+// }
+// let b=a;
+
+// // b.p=59;
+// {
+//     p:100,
+//   }
+// console.log(a);
+// console.log(b);
+// let a ={
+//     p:100,
+//   }
+//   let b = {};
+//   b.s =50; 
+//   b = a; 
+//   a.d = 40;
+
+//   console.log(a);
+//   console.log(b);
+
+// let a ={
+//     p:100,
+// };
+
+// let b = {
+//     ...a, // spreading
+// };
+
+// a.p=79;
+// b.p = 59;
+
+
+// console.log(a);
+// console.log(b);
+
+// let a ={
+//     p:100,
+// };
+
+// let b = {
+//     ...a, // spreading
+// };
+
+// a.p=79;
+// b.p = 59;
+
+
+// console.log(a);
+// console.log(b);
+
+// const a = {
+//    b:100,
+// }
+
+const a=100;
+
+a=10;
