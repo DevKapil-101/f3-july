@@ -216,10 +216,59 @@
 // console.log(a);
 // console.log(b);
 
-// const a = {
+// let a = {
 //    b:100,
 // }
+// a=200;
+// console.log(a);
 
-const a=100;
+// const a=100;
+// a=10;
+// console.log(a);
 
-a=10;
+// 
+// here p:100 but what if p : 
+// { prop : value } then if we spread 
+// a, will variable b and a 
+// then point towards the same ref p or different ref?
+
+
+// let a = {
+//     p:100,
+//     g:{
+//         q:10,
+//         r:60,
+//     }
+// }
+
+// let b = {
+//     ...a,
+// };
+
+// a.p=10;
+// a.g.q=300;
+
+// console.log(a);
+// console.log(b);
+
+// spread operator will deep copy only if
+// there's no nested object inside the object.
+// else it'll be shallow
+
+let a = {
+    p:100,
+    g:{
+        q:10,
+        r:60,
+    }
+}
+
+let strA = JSON.stringify(a);
+console.log(strA);
+
+let deepA = JSON.parse(strA);
+
+deepA.g.q = 900;
+
+console.log('object a--->',a);
+console.log('object deep copy a--->',deepA);
