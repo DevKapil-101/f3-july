@@ -272,3 +272,7 @@ deepA.g.q = 900;
 
 console.log('object a--->',a);
 console.log('object deep copy a--->',deepA);
+
+// Prototypes
+// Call bind apply
+// Array methods (polyfills)
